@@ -8,9 +8,10 @@ int main()
     std::cin >> num;
 
     // make sure input number falls in the integer limit
-    if (num > pow(2, 31))
+    if (num > pow(2, 15))
     {
-        exit(1);
+        std::cout << "\nInteger too big\n";
+        return 1;
     }
 
     int constructed_number = 0;
