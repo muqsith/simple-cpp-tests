@@ -18,5 +18,17 @@ int main()
 
     complex<double> z = 1;
 
+    double d1 {2.4};
+
+    cout << " value of d1: " << d1 << "\n";
+
+    auto name = "Muqsith";
+
+    cout << " name is " << name << "\n";
+
+    auto ns = {4.5, 3.9, 7.3};
+
+    cout << " ns " << *(ns.begin()+1) << "\n";
+
     return 0;
 }
