@@ -14,6 +14,8 @@ public:
     {
         if (s < 0)
             throw length_error{"invalid length for the vector"};
+        if (s > 100)
+            throw bad_alloc{};
         sz = s;
         elem = new double[s];
     }
@@ -50,7 +52,12 @@ Vec get_vec()
     }
     catch (length_error)
     {
-        cout << "Please provide a valid length anything above -1\ntry again\n";
+        cout << "Negative size is not allowed\ntry again\n";
+        return get_vec();
+    }
+    catch (bad_alloc)
+    {
+        cout << "You just tried to kill the computer\ntry again\n";
         return get_vec();
     }
     return v;
