@@ -1,0 +1,7 @@
+Courtesy: https://youtu.be/HPMvU64RUTY
+
+CMake generates Makefile
+It's easy to create CMakeLists.txt, a file that cmake command takes as input to generate Makefile, than to create 
+a Makefile with hand.
+There are many CMake flags that can be used to control the compilation and linking process. Like using 3rd party
+libs etc.
