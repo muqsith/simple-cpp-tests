@@ -5,3 +5,11 @@ It's easy to create CMakeLists.txt, a file that cmake command takes as input to 
 a Makefile with hand.
 There are many CMake flags that can be used to control the compilation and linking process. Like using 3rd party
 libs etc.
+
+To use CMake
+
+1. create a build folder
+2. cd to build folder
+3. run command : $ cmake ../
+4. It would generate Makefile in the build folder
+5. Now to generate the binary run command: $ make
